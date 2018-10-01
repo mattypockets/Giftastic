@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    var pokemon = ["Bulbasaur", "Pikachu", "Eevee", "Haunter"];
+    var pokemon = ["Bulbasaur", "Pikachu", "Eevee", "Squirtle"];
 
     
     // Show buttons for each pokemon
@@ -23,7 +23,7 @@ $( document ).ready(function() {
     }
 
     // Display gifs when button is clicked
-    $(document.body).on("click", "button", function() {
+    $(document.body).on("click", ".poke-btn", function() {
         event.preventDefault();
 
         var name = $(this).attr("data-name");
