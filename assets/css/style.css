@@ -1,0 +1,17 @@
+body {
+    background-image: url(background.jpg);
+}
+
+p {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gif-div {
+    margin: 3%;
+    float: left;
+}
+
+.poke-btn {
+    margin: 5px;
+}

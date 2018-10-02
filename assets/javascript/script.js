@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
           var a = $("<button>");
 
-          a.addClass("poke-btn");
+          a.addClass("btn btn-info poke-btn");
           a.attr("data-name", pokemon[i]);
           a.text(pokemon[i]);
 
@@ -36,9 +36,10 @@ $( document ).ready(function() {
         })
           .then(function(response) {
             var results = response.data;
-            console.log(results);
+            $(".gifSpace").html("");
+
             for (var i = 0; i < results.length; i++) {
-              var gifDiv = $("<div>");
+              var gifDiv = $("<div class='gif-div'>");
               var rating = results[i].rating;
               var p = $("<p>").text("Rating: " + rating);
               var pokeImg = $("<img>");

@@ -13,33 +13,34 @@
 <body>
     <div class="contianer">
         <div class="row">
-            <div class="col-md-10 mainContent">
+            <div class="col-md-12 mainContent">
                 <!-- Buttons to pull up gifs -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 d-flex justify-content-center">
                         <div class="buttons"></div>
                     </div>
                 </div>
+
+                <div class="col-md-12 d-flex justify-content-center">
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInput">Search</label>
+                                <input type="text" class="form-control mb-2 pokeSearch" id="inlineFormInput" placeholder="Search Pokemon .gifs">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-2 addPokemon">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
                 <!-- Space to display gifs -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 d-flex justify-content-center">
                         <div class="gifSpace"></div>
                     </div>
                 </div>
-            </div>
-            <!-- Search bar -->
-            <div class="col-md-2">
-                <form>
-                    <div class="form-row align-items-center">
-                        <div class="col-auto">
-                            <label class="sr-only" for="inlineFormInput">Search</label>
-                            <input type="text" class="form-control mb-2 pokeSearch" id="inlineFormInput" placeholder="Search Pokemon .gifs">
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-2 addPokemon">Submit</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
